@@ -1,27 +1,40 @@
 # AnimalRegistry
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+# Workshop unit tests, integration and REST services
 
-## Development server
+In this web application you can:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Create an animal
 
-## Code scaffolding
+Edit an animal
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Delete an animal
 
-## Build
+List all the animals of the Zoo
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## How to use the application?
 
-## Running unit tests
+At the top you will find a navigation bar with three items:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Animals:
+The 'Animals' button will allow you to see the list of animals registered in our database.
 
-## Running end-to-end tests
+Register:
+The 'Register' button will allow you to register a new animal.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Search:
+The 'Search' button will allow you to search and edit an animal that is registered in the database, for this you must write the ID of the animal in the field.
 
-## Further help
+## Validations:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The species selected for this API is the puma.
+
+Animal names must be unique and cannot exceed 120 digits in length and can only contain letters and spaces.
+
+The arrival date cannot be after the current date as only the animals that are currently in the zoo are recorded.
+
+The weight for a puma must be greater than 1 and less than 100:
+
+The height for a puma must be greater than 20 and less than 90 (measurements given in cm):
+
+The age for a puma must be greater than 1 and less than 14:
